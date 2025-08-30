@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2:first-child {
+        text-align: center;
+      }
+
+      .container {
+        margin: 0;
+        padding: 0;
+        width: 95vw;
+        height: 1000px;
+        border: 2px solid black;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 10vh auto;
+      }
+      .box {
+        border: 2px solid black;
+        margin: 2px;
+      }
+      .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12 {
+        display: grid;
+        place-content: center;
+      }
+      .box4 img,.box7 img ,.box10 img {
+        width: 200px;
+      }
+      .box4{
+        background-color: rgb(143, 166, 172);
+      }
+      .box7{
+        background-color: rgb(143, 166, 172);
+      }
+      .box10{
+        background-color: rgb(143, 166, 172);
+      }
+     
+      .a{
+        display:flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>The college details</h2>
+    <div class="container">
+      <div class="box box1"><h1>name</h1></div>
+      <div class="box box2"><h1>details</h1></div>
+      <div class="box box3"><h1>links</h1></div>
+      <div class="box box4">
+        <img
+          src="https://images.shiksha.com/mediadata/images/1744886876phpGfXOay.jpeg"
+          alt=""
+        />
+        <p>
+          cambridge institute of technology
+          <abbr title="cambridge institute of technology">(CIT)</abbr>
+        </p>
+      </div>
+      <div class="box box5">
+        <ol>
+          <li>Established 2007 VTU</li>
+          <li>BE MTech MBA</li>
+          <li>20 Acres Campus</li>
+          <li>Strong Industry Placements</li>
+        </ol>
+      </div>
+      <div class="box box6">
+        <a href="https://engg.cambridge.edu.in/" target="_blank">CIT_website</a><br />
+
+      </div>
+      <div class="box box7">
+        <img
+          src="https://nitte.edu.in/nmit/img/award/video-banner.jpg"
+          alt=""
+        />
+        <abbr title="nitte meenakshi institute of technology">(NMIT)</abbr>
+      </div>
+      <div class="box box8">
+        <ol>
+          <li>Founded 2001 Autonomy</li>
+          <li>VTU, NBA, NAAC</li>
+          <li>Strong Placement Support</li>
+          <li>23-acre Serene Campus</li>
+        </ol>
+      </div>
+      <div class="box box9">        <a href="https://nitte.edu.in/nmit/" target="_blank">NMIT_website</a><br />
+</div>
+      <div class="box box10">
+        <img
+          src="https://www.cmrit.ac.in/wp-content/uploads/2021/06/why-cmr-it-01.jpg"
+          alt=""
+        />
+        <abbr title="CMR Institute of Technology">( CMRIT)</abbr>
+      </div>
+      <div class="box box11">
+        <ol>
+          <li>Established 2000 VTU</li>
+          <li>8-acre Whitefield Campus</li>
+          <li>NAAC A++ Accredited</li>
+          <li>Strong Placement Record</li>
+        </ol>
+      </div>
+      <div class="box box12">        <a href="https://www.cmrit.ac.in/" target="_blank">CMRIT_website</a><br />
+</div>
+    </div><br>
+    <div class="a">
+        <p><h1>choose the college</h1></p>&nbsp &nbsp
+
+    <form action="" class="b" >
+        <input type="radio" name="college" value="CIT">CIT   <br>
+        <input type="radio" name="college" value="NMIT">NMIT   <br>
+        <input type="radio" name="college" value="CMRIT">CMRIT   <br><br>
+ <button type="button" onclick="alert('okay')">Submit</button></div>
+    </form>
+  </body>
+</html>
